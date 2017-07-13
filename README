@@ -1,0 +1,38 @@
+
+
+***Software Requirements***
+
+*Eclipse IDE, Java SE Kit
+*The assignment was developed on Windows 10 OS using Eclipse-neon-3 IDE
+*Extract the rar file "TestAssignment". Import the file to Eclipse IDE. Run Solution.java class.
+*From command line, change directory to src in G&D Java Test folder.
+*Compile the five classes (Animal, Dog, Chicken, Parrot, Solution) using command javac classname.java
+*After compiling run solution class i.e using command java Solution.
+
+***Running the task***
+
+*The user is asked to enter the name of animals and their properties (eg:Dog one, Parrot one, Chicken one)
+*When user enters "stop", the names and properties of animals are saved.
+*After entering four commands the user can choose four options.
+1.list - When user enters "list" command the properties and friend list of animals are displayed
+2.listfriends - When this command is entered the friends list of animals is displayed
+3.liveoneday - When this command is entered, each animal leaves one friend, if there is any and adds one friend which is not friend of all other animals.
+4.exit - to exit from the task.
+
+***Understanding the task***
+
+*As per the description it is assumed that no animal has any friends.
+*Animal loses one friend, if there are any.
+*Establishes friendship randomly with one animal, if it is not already friend of all other animals.
+
+***Designing the task***
+
+*The task is designed in such a way that the user can enter more number of animals and their properties if required.
+*The Dog, Parrot and Chicken properties are stored in their respective classes. The common properties name and food type are inherited from Animal Class. The animals are stored as objects in ArrayList named "animalArray".
+*After adding animal names and properties, it is considered that animals dont have any friends.
+*In each step of the way animals are randomly choosen to be friends of another animal.
+*Collections framework(Arraylist and Hashmap) are used to store animals as objects as well as perform manipulations to get the desired result.
+*Hashmaps objects "lostFriends" and "gainedFriends" are used to store friends of animals which are lost or gained at each step of the way.
+*A hashmap object "friendsMap" is updated with the current friends of each animal.
+
+
